@@ -10,7 +10,7 @@ public class CustomerTask {
 
 
 	public static void main(String[] args) {
-		try (Socket socket = new Socket("localhost", 9999)) {
+		try (Socket socket = new Socket("localhost", 1234)) {
 			log.info("Connection established.");
 
 			PrintStream out = new PrintStream(socket.getOutputStream());
